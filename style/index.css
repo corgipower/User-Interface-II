@@ -1,1 +1,154 @@
 /* Add CSS styling here */
+
+/* css reset start */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css reset end */
+
+header, footer {
+	background-color: gray;
+}
+
+header {
+	padding: 20px;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+nav {
+	display: flex;
+}
+
+nav a {
+	height: 20px;
+	padding: 5px;
+	background-color: white;
+	border: 1px solid black;
+	text-decoration: none;
+}
+
+.current {
+	background-color: black;
+	color: white;
+}
+
+.intro {
+	display: flex;
+	box-sizing: border-box;
+	padding: 10px;
+	align-items: flex-end;
+	justify-content: space-evenly;
+}
+
+.left {
+	width: 50%;
+}
+
+.left img {
+	width: 100%;
+	height: auto;
+}
+
+.right {
+	width: 50%;
+	padding: 70px 10px 0 70px;
+	line-height: 25px;
+}
+
+.gallery {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+ 
+.gallery img {
+	height: auto;
+	width: 21%;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+footer {
+	text-align: center;
+	height: 100px;
+}
+
+footer p {
+	padding-top: 20px;
+}
+
+button {
+	background-color: white;
+	border: 1px solid black;
+	padding: 5px;
+	margin: 20px 0;
+}
+
+@media (max-width: 960px) {
+	.intro {
+		flex-direction: column;
+	}
+
+	.left {
+		width: 100%;
+	}
+
+	.right {
+		width: 100%;
+	}
+}
