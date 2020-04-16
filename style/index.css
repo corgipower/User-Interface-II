@@ -52,6 +52,10 @@ table {
 
 /* css reset end */
 
+html {
+	font-size: 62.5%;
+}
+
 header, footer {
 	background-color: gray;
 }
@@ -62,12 +66,12 @@ header {
 
 h1 {
 	text-transform: uppercase;
-	font-size: 40px;
+	font-size: 4rem;
 }
 
 h2 {
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 3rem;
 }
 
 nav {
@@ -80,6 +84,7 @@ nav a {
 	background-color: white;
 	border: 1px solid black;
 	text-decoration: none;
+	font-size: 1.6rem;
 }
 
 .current {
@@ -108,6 +113,7 @@ nav a {
 	width: 50%;
 	padding: 70px 10px 0 70px;
 	line-height: 25px;
+	font-size: 1.6rem;
 }
 
 .gallery {
@@ -130,6 +136,7 @@ footer {
 
 footer p {
 	padding-top: 20px;
+	font-size: 1.6rem;
 }
 
 button {
@@ -139,7 +146,7 @@ button {
 	margin: 20px 0;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
 	.intro {
 		flex-direction: column;
 	}
@@ -150,5 +157,19 @@ button {
 
 	.right {
 		width: 100%;
+		padding: 0;
+	}
+}
+
+@media (max-width: 500px) {
+
+	.gallery {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	.gallery img {
+		width: 90%;
+		margin: 0 auto;
 	}
 }
