@@ -162,6 +162,19 @@ button {
 
 @media (max-width: 500px) {
 
+	nav {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
 	.gallery {
 		flex-direction: column;
 		flex-wrap: nowrap;
