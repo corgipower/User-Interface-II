@@ -1,1 +1,187 @@
 /* Add CSS styling here */
+
+/* css reset start */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css reset end */
+
+html {
+	font-size: 62.5%;
+}
+
+header, footer {
+	background-color: gray;
+}
+
+header {
+	padding: 1.5%;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 4rem;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 3rem;
+}
+
+nav {
+	display: flex;
+}
+
+nav a {
+	height: 2rem;
+	padding: .25%;
+	background-color: white;
+	border: 1px solid black;
+	text-decoration: none;
+	font-size: 1.6rem;
+}
+
+.current {
+	background-color: black;
+	color: white;
+}
+
+.intro {
+	display: flex;
+	box-sizing: border-box;
+	padding: 1%;
+	align-items: flex-end;
+	justify-content: space-evenly;
+}
+
+.left {
+	width: 50%;
+}
+
+.left img {
+	width: 100%;
+	height: auto;
+}
+
+.right {
+	width: 50%;
+	padding: 6% 0 0 6%;
+	line-height: 1.5;
+	font-size: 1.6rem;
+}
+
+.gallery {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+ 
+.gallery img {
+	height: auto;
+	width: 21%;
+	box-sizing: border-box;
+	padding: 1.5%;
+}
+
+footer {
+	text-align: center;
+}
+
+footer p {
+	padding-top: 2%;
+	font-size: 1.6rem;
+}
+
+button {
+	background-color: white;
+	border: 1px solid black;
+	padding: 0.7%;
+	margin: 2% 0;
+}
+
+@media (max-width: 800px) {
+	.intro {
+		flex-direction: column;
+	}
+
+	.left {
+		width: 100%;
+	}
+
+	.right {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+@media (max-width: 500px) {
+
+	nav {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	.gallery {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	.gallery img {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
